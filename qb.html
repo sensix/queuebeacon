@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QueueBeacon</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+  <link href="css/queuebeacon.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#comeFunziona">Come funziona</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#casiUso">Casi d'uso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contatti">Contatti</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1><img src="img/queuebeacon.svg"></h1>
+            <p>una piattaforma informatica che consente la gestione ordinata di <strong>risorse contese</strong></p>
+            <a href="#scopriDiPiu" class="btn btn-primary btn-lg js-scroll-trigger px-5 py-2">Scopri di più</a>
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait black">
+              <div class="device">
+                <div class="screen">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="come bg-evi-1 py-5" id="scopriDiPiu">
+    <div class="container">
+      <div class="row my-4">
+        <div class="col-10 col-md-6">
+          <p>Una <strong>risorsa contesa</strong> è uno spazio, reale o virtuale, che può essere utilizzato da un numero limitato di utenti in un determinato intervallo di tempo. </p>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="col-md-2 my-auto text-center">
+          [img]
+        </div>
+        <div class="col-md-10">
+          <p>QueueBeaconTM  nasce durante l’emergenza COVID-19, per far fronte all’esigenza di <strong>rispettare il distanziamento sociale</strong>, e di conseguenza, di contingentare l’utilizzo di spazi pubblici e privati. </p>
+        </div>
+      </div>
+      <div class="row my-4"> 
+        <div class="col-md-10">
+          <p>La piattaforma utilizza la <strong>tecnologia iBeacon</strong> e un software per <strong>gestire la prenotazione e l’utilizzo temporaneo</strong> di spazi o risorse. E’ possibile integrare QueueBeaconTM all’interno di altre applicazioni includendo l’<abbr title="software development kit">SDK</abbr>. </p>
+        </div>
+        <div class="col-md-2 my-auto">
+          [img]
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="casi" id="comeFunziona">
+    <div class="container">
+      <div class="section-heading my-5">
+        <h2>Come funziona</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p>Viene caricato un insieme di risorse da contendere. Per ogni risorsa vengono specificati i seguenti parametri: </p>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-sm-2 text-center my-auto">[img]</div>
+        <div class="col-sm-10">
+          <p><strong>Disponibilità temporale della risorsa:</strong> quanto tempo al giorno la risorsa è disponibile per essere contesa (ad esempio un negozio può essere conteso in orario di apertura 9:00 - 13:00, 15:00 - 19:00) </p>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-sm-2 text-center my-auto">[img]</div>
+        <div class="col-sm-10">
+          <p><strong>Frazionamento temporale, o dimensione dello slot temporale:</strong> in quanti slot viene suddivisa la disponibilità temporale, ovvero qual è la durata dello slot temporale da contendere (nel caso del negozio lo slot temporale può essere di 30 minuti, quindi in un giorno ci sono 16 slot temporali) </p>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-sm-2 text-center my-auto">[img]</div>
+        <div class="col-sm-10">
+        <p><strong>Capienza:</strong> la risorsa può essere utilizzata da un numero limitato di utenti per ciascuno slot, tale numero è una proprietà della risorsa stessa (ad esempio se in una palestra possono esserci solo 1 utente per ogni 4 mq e la palestra ha una superficie di 300 mq, il numero massimo di utenti per slot è 75) </p>        
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-sm-2 text-center my-auto">[img]</div>
+        <div class="col-sm-10">
+        <p><strong>Prenotazione della risorsa:</strong> gli utenti possono prenotare uno slot della risorsa fino a raggiungere la capienza dello slot, gli utenti possono prenotare un solo slot in determinato periodo di tempo. </p>        
+        </div>
+      </div>
+     </div>
+  </section>
+  
+  
+  <section class="casi" id="casiUso">
+    <div class="container">
+      <div class="section-heading py-5">
+        <h2>Casi d'uso</h2>
+      </div>
+    </div>
+    <div class="bg-type-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 py-4 bg-sx">
+            <h3 class="text-right">Contacoda.it<br>(Bologna)</h3> 
+          </div>
+          <div class="col-md-8 py-4">
+            <p><strong>Contacoda<sup>TM</sup></strong> è un’app che utilizza il la tecnologia <strong>QueueBeacon<sup>TM</sup></strong>  per gestire l’accesso ordinato ai negozi e agli spazi pubblici durante la Fase 2 dell’emergenza COVID-19.</p>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-type-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 py-4">
+            <p>L’applicazione fornisce all’utente <strong>la mappa del comune di Bologna con tutti gli esercenti che aderiscono all’iniziativa</strong>.</p> 
+            <p>L’utente può prenotare la propria visita al negozio selezionando il giorno (dal giorno corrente fino ai prossimi 6 giorni) e lo slot. Lo slot può essere di 15, 30, 60 minuti (è impostato dall’esercente).</p> 
+            <p>Per ogni slot si possono prenotare fino ad un numero massimo di visitatori (in base alle regole di distanziamento sociale). Quando un utente prenota lo slot, la prenotazione è visibile immediatamente a tutti gli utenti. <strong>Lo stato di prenotazione della risorsa negozio è rappresentata direttamente sulla mappa da un marker di colore più o meno intenso.</strong></p>
+          </div>
+          <div class="col-md-4 py-4 bg-dx">
+            [mappa]       
+          </div>
+        </div>
+      </div>
+     </div>
+     <div class="bg-type-1">
+       <div class="container">
+        <div class="row">
+          <div class="col-md-4 py-4 bg-sx">
+            [img]
+          </div>
+          <div class="col-md-8 py-4">
+            <p>Nel caso l’utente dovesse cambiare idea può annullare la prenotazione fino a 30 minuti prima dell’inizio dello slot. Passato questo tempo l’app segnerà la prenotazione come “mancata visita”. Per scoraggiare la prenotazione di uno slot agli utenti che non si presentano, quando l’app marca una mancata visita, inibisce all’utente la possibilità di prenotare lo slot per 3 giorni.<p>
+          </div>
+        </div>
+      </div>
+     </div>
+     <div class="container">
+       <div class="row py-4">
+         <div class="col-md-12">
+           <p><strong>Visita in negozio:</strong></p> 
+           <p>Quando l’utente visita il negozio, <strong>entra fisicamente nella regione identificata dal Beacon installato all’interno del negozio</strong>. Questo evento marca nell’app lo stato di “visita effettuata” e incrementa il numero di visitatori nel negozio.</p> 
+           <p>Aprendo dall’app la scheda del negozio <strong>chiunque può vedere in tempo reale il numero di clienti al suo interno</strong>. Se questo numero supera quello consentito viene generato un evento di allarme che può essere gestito dal backend.</p> 
+           <p>Chiaramente il sistema funziona solo se nel negozio entrano solo gli utenti che utilizzano l’app. In caso contrario i commessi possono comunque ammettere i clienti all’ingresso, incrementando manualmente il numero di utenti presenti, a patto che non si sia superato il limite consentito per legge. </p>
+         </div>
+       </div>
+    </div>
+  <div class="overlay"></div>
+  </section>
+  
+  
+  <section class="contatti bg-evi-1" id="contatti">
+    <div class="container">
+      <div class="section-heading py-5">
+        <h3 class="text-center">Qui ci vorrebbe un claim<br>di un paio di righe</h3>
+      </div>
+  </section>
+  
+  <section class="contatti " id="contatti">
+    <div class="container">
+      <div class="section-heading py-5">
+        <h2>Contattaci</h2>
+      </div>
+      <div class="row py-4">  
+        <div class="col-md-12">
+          solo mail o form di contatto?
+        </div> 
+      </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; BitApp2020. All Rights Reserved.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#">Privacy</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Terms</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/queuebeacon.js"></script>
+
+</body>
+
+</html>
